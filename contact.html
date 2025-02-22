@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with us for more information about Calabar's cultural tourism experience.">
+    <meta name="author" content="Samuel David">
+    <title>Contact Us - Calabar Cultural Tourism Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Calabar Cultural Tourism Logo">
+          </div>
+        <h1>Calabar Cultural Tourism Guide</h1>
+        <button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="food.html">Food</a></li>
+                <li><a href="tour.html">Guided Tours</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero contact-hero">
+            <h2>Contact Us</h2>
+            <p>Have questions? Get in touch with us for more details about your next trip to Calabar.</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+        <section class="scenarios">
+            <h2>Frequently Asked Questions</h2>
+            <div class="question">
+                <h3>Where can I find a tour guide?</h3>
+                <p>You can book a guide directly from our Tours page. We offer guided tours to top attractions.
+                   Check out our <a href="tour.html">Guided Tours</a> page for more details.
+                </p>
+            </div>
+            <div class="question">
+                <h3>What are the best cultural events in Calabar?</h3>
+                <p>Check out our Events page for an updated list of festivals, music shows, and art exhibitions.
+                    Visit our <a href="events.html">Events</a> page for more information.
+                </p>
+            </div>
+            <div class="question">
+                <h3>How can I learn more about Calabar's history?</h3>
+                <p>Visit the Old Residency Museum and the Slave History Museum for a deep dive into Calabar's past.
+                    Check out our <a href="attractions.html">Attractions</a> page for more information.
+                </p>
+            </div>
+            <div class="question">
+                <h3>Where can I find local food in Calabar?</h3>
+                <p>Experience the rich culinary heritage of Calabar by visiting local restaurants and food markets.
+                    Check out our <a href="food.html">Local Food</a> page for more information.
+                </p>
+        </section>
+        
+        <section class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get the latest updates on events, attractions, and local food in Calabar straight to your inbox.</p>
+            <div class="form">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </div>
+        </section>
+
+        <section class="contact-details">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> info@calabartourism.com</p>
+            <p><strong>Phone:</strong> +234 123 456 7890</p>
+            <p><strong>Address:</strong> 12 Marina Road, Calabar, Nigeria</p>
+        </section>
+
+        <section class="map">
+            <h2>Find Us Here</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.17436812383!2d8.267940602208646!3d4.958625224951816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10678660a98f439f%3A0x8a45c9e5e4b28e79!2sCalabar!5e0!3m2!1sen!2sng!4v1647112565658!5m2!1sen!2sng" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Calabar Cultural Tourism Guide | Designed by Samuel David</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

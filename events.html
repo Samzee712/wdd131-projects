@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover cultural events in Calabar. Join exciting festivals, tours, and celebrations.">
+  <meta name="author" content="Samuel David">
+  <title>Calabar Events - Cultural Tourism Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Using Poppins font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/events.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/events.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Calabar Cultural Tourism Logo">
+    </div>
+    <button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="food.html">Local Food</a></li>
+        <li><a href="tours.html">Guided Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/Event-image.webp" alt="Calabar Events Banner" loading="lazy">
+      <div class="hero-text">
+        <h2>Experience Calabar's Vibrant Events</h2>
+        <p>Join us for the most exciting cultural festivals and celebrations in Calabar.</p>
+      </div>
+    </section>
+
+    <!-- Events Content -->
+    <section class="content">
+      <h2>Upcoming Events</h2>
+      <div id="eventContainer" class="gallery">
+        <!-- Event cards will be inserted here dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Popup for Event Details -->
+  <div id="eventModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDate"></p>
+      <p id="modalLocation"></p>
+      <p id="modalDescription"></p>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Calabar Cultural Tourism Guide</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

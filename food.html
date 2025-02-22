@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the delicious traditional dishes of Calabar, Nigeria.">
+  <meta name="author" content="Samuel David">
+  <title>Calabar Cuisine - Local Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/food.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/food.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Calabar Cultural Tourism Logo">
+    </div>
+    <button id="menuToggle" aria-label="Toggle navigation">&#9776;</button>
+    <nav>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="attractions.html">Attractions</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="food.html" class="active">Local Food</a></li>
+        <li><a href="tours.html">Guided Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/Food-heroi.webp" alt="Calabar Traditional Dishes" loading="lazy">
+      <div class="hero-text">
+        <h2>Discover the Taste of Calabar</h2>
+        <p>Enjoy authentic local cuisine that represents the rich heritage of Calabar.</p>
+      </div>
+    </section>
+
+    <!-- Local Food Content -->
+    <section class="content">
+      <h2>Popular Dishes</h2>
+      <div id="foodContainer" class="gallery">
+        <!-- Food cards will be inserted here dynamically -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Popup for Food Details -->
+  <div id="foodModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <img id="modalImage" src="" alt="">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Calabar Cultural Tourism Guide</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
+<!-- The food.html file contains the structure for the Local Food page of the website. It includes a header, main content, and a footer. The main content section displays a hero section with a banner image and a heading, followed by a section for popular dishes. The popular dishes are dynamically inserted into the page using JavaScript. The footer includes the copyright information and the last modified date. -->
+<!-- The food.html file also includes links to the main.css and responsive.css stylesheets, as well as the food.js script for dynamic content. The meta tags provide information about the page content, such as the description and author. The title of the page is "Calabar Cuisine - Local Food". -->

@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+    #menuToggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        position: static;
+        background: none;
+        padding: 0;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .hero-text {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}

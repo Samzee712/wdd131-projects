@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore top attractions in Calabar, including cultural sites and historical landmarks.">
+    <meta name="author" content="Samuel David">
+    <title>Attractions - Calabar Cultural Tourism</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Calabar Cultural Tourism Logo">
+        </div>
+        <button id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html" class="active">Attractions</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="food.html">Local Food</a></li>
+                <li><a href="tours.html">Guided Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <img src="images/Hero-image-attraction.jpg" alt="Calabar Attractions">
+            <h1>Top Attractions in Calabar</h1>
+        </section>
+
+        <section class="content">
+            <div class="attraction-card">
+                <img src="images/Slave-trade-image.jpeg" alt="Slave History Museum" loading="lazy">
+                <h2>Slave History Museum</h2>
+                <p>Explore Nigeria's history of the slave trade, featuring artifacts and guided tours.</p>
+            </div>
+
+            <div class="attraction-card">
+                <img src="images/Duke-town.jpeg" alt="Duke Town Church" loading="lazy">
+                <h2>Duke Town Church</h2>
+                <p>One of the oldest churches in Nigeria, offering a glimpse into colonial history.</p>
+            </div>
+
+            <div class="attraction-card">
+                <img src="images/Marina-resort.jpeg" alt="Marina Resort" loading="lazy">
+                <h2>Marina Resort</h2>
+                <p>A beautiful waterfront with a museum, restaurants, and boat cruises.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Calabar Cultural Tourism Guide</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

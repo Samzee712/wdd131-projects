@@ -3,10 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL='siteplan.html'">
-    <title>Redirecting...</title>
+    <meta name="description" content="Discover the beauty of Calabar, Nigeria. Explore cultural attractions, local food, and guided tours.">
+    <meta name="author" content="Samuel David">
+    <title>Calabar Cultural Tourism Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="siteplan.html">click here</a>.</p>
+    <header>
+        <div class="logo">
+            <img src="images/Logo.png" alt="Calabar Cultural Tourism Logo">
+        </div>
+        <button id="menuToggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="food.html">Local Food</a></li>
+                <li><a href="tours.html">Guided Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/Calab.png" alt="Beautiful View of Calabar" loading="lazy">
+            <div class="hero-text">
+                <h1>Welcome to Calabar</h1>
+                <p>Experience the rich culture, historical sites, and vibrant festivals of Calabar, Nigeria.</p>
+                <a href="tours.html" class="btn">Explore Tours</a>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <h2>Explore Calabar</h2>
+            <div class="highlight-grid">
+                <div class="highlight-card">
+                    <img src="images/event.png" alt="Cultural Attractions" loading="lazy">
+                    <h3>Cultural Attractions</h3>
+                    <p>Visit the historic sites and museums that showcase Calabar’s rich heritage.</p>
+                    <a href="attractions.html" class="btn">Learn More</a>
+                </div>
+                <div class="highlight-card">
+                    <img src="images/Carnival.png" alt="Festivals and Events" loading="lazy">
+                    <h3>Festivals & Events</h3>
+                    <p>Join the famous Calabar Carnival and other exciting cultural festivals.</p>
+                    <a href="events.html" class="btn">See Events</a>
+                </div>
+                <div class="highlight-card">
+                    <img src="images/food-logo.png" alt="Local Delicacies" loading="lazy">
+                    <h3>Local Food</h3>
+                    <p>Enjoy delicious dishes like Afang soup, pepper soup, and more.</p>
+                    <a href="food.html" class="btn">Taste Calabar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Calabar Cultural Tourism Guide</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
